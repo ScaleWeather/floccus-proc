@@ -2,6 +2,15 @@
 name = "floccus-proc"
 version = "0.1.0"
 edition = "2021"
+description = "Procedural macros for floccus crate"
+repository = "https://github.com/ScaleWeather/floccus-proc"
+readme = "README.md"
+keywords = ["macro"]
+categories = ["parsing"]
+license = "Apache-2.0"
+exclude = [
+    ".github/*",
+]
 
 [lib]
 proc-macro = true
