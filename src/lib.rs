@@ -14,6 +14,12 @@ use syn::{
     ExprClosure, ExprParen, FnArg, Ident, ItemFn, Pat, Result, ReturnType,
 };
 
+/// Not so simple proc macro with no attributes that logs an error
+/// when function it is applied to returns `Err()`. Log message contains
+/// details of function inputs and returned error.
+/// 
+/// Internally, this macro converts the function into a closure and appends
+/// `.map_err()` which passes the error untouched logging it along the way.
 #[proc_macro_attribute]
 pub fn logerr(
     _attr: proc_macro::TokenStream,
