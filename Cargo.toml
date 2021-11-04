@@ -1,6 +1,6 @@
 [package]
 name = "floccus-proc"
-version = "0.1.0"
+version = "0.2.5"
 edition = "2021"
 description = "Procedural macros for floccus crate"
 repository = "https://github.com/ScaleWeather/floccus-proc"
