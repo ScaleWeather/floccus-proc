@@ -16,7 +16,7 @@ pub fn name(input: TokenStream) -> TokenStream {
     let ident = &ast.ident;
     let gen = quote! {
         impl crate::quantities::QuantityName for #ident {
-            fn name() -> &'static str {
+            fn type_name_as_str() -> &'static str {
                 stringify!(#ident)
             }
         }
